@@ -157,6 +157,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BushelController.cs" />
     <Compile Include="Controllers\CiderController.cs" />
+    <Compile Include="Controllers\StealApplesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PickApplesController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -196,7 +197,10 @@
     <Content Include="app\app.js" />
     <Content Include="app\appconfig.js" />
     <Content Include="app\controllers\PickApples\pickApplesController.js" />
+    <Content Include="app\controllers\StealApples\stealApplesController.js" />
     <Content Include="app\views\PickApples\pickApples.html" />
+    <Content Include="app\views\StealApples\stealApples.html" />
+    <Content Include="app\views\ViewBushels\viewBushels.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
