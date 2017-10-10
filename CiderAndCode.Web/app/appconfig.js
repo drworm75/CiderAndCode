@@ -11,5 +11,11 @@
             controller: "stealApplesController"
 
         })
+        .when("/viewbushels",
+        {
+            templateUrl: "/app/views/ViewBushels/viewBushels.html",
+            controller: "viewBushelsController"
+
+        })
         ;
 }]);

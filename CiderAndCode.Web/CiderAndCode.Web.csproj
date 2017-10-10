@@ -155,8 +155,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AppleFactsController.cs" />
     <Compile Include="Controllers\BushelController.cs" />
     <Compile Include="Controllers\CiderController.cs" />
+    <Compile Include="Controllers\MakeCiderController.cs" />
+    <Compile Include="Controllers\ViewBushelsController.cs" />
     <Compile Include="Controllers\StealApplesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PickApplesController.cs" />
@@ -198,6 +201,7 @@
     <Content Include="app\appconfig.js" />
     <Content Include="app\controllers\PickApples\pickApplesController.js" />
     <Content Include="app\controllers\StealApples\stealApplesController.js" />
+    <Content Include="app\controllers\ViewBushels\viewBushelsController.js" />
     <Content Include="app\views\PickApples\pickApples.html" />
     <Content Include="app\views\StealApples\stealApples.html" />
     <Content Include="app\views\ViewBushels\viewBushels.html" />
@@ -237,6 +241,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\MakeCider\Index.cshtml" />
+    <Content Include="Views\AppleFacts\Create.cshtml" />
+    <Content Include="Views\AppleFacts\Delete.cshtml" />
+    <Content Include="Views\AppleFacts\Details.cshtml" />
+    <Content Include="Views\AppleFacts\Edit.cshtml" />
+    <Content Include="Views\AppleFacts\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

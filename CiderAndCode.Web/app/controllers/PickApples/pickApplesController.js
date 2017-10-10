@@ -9,14 +9,18 @@
 
     $scope.pickApples = function () {
         let bushel = $scope.bushel;
+        console.log(bushel);
         $http.post("/api/PickApples",
                 {
                     Type: bushel.appleType,
                     NumberOfBushels: bushel.numberOfBushels,
                     UserId: bushel.userId
                 })
+        
+
             .then(result => console.log(result))
             .catch(error => console.log(error));
+        console.log(bushel);
     };
 
 }]);

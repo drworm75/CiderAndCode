@@ -1,11 +1,38 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>Come back soon to steal some apples!</h1>
+
+    <div class="container">
+        <h2>Bushel Info</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Bushel Id</th>
+                    <th>Type of Apple</th>
+                    <th>Number of Bushels</th>
+                    <th>Hand Picked By</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="bushel in bushels">
+                    <td>{{bushel.Id}}  </td>
+                    <td>{{bushel.TypeOfApple}}</td>
+                    <td>{{bushel.NumberOfBushels}}</td>
+                    <td>{{bushel.ContributingUser}}</td>
+                    <td><button ng-click="takeApples()">Steal 'dem apples</button>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </body>
 </html>
